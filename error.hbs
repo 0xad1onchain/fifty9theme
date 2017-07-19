@@ -7,7 +7,7 @@
 {{!-- Everything inside the #post tags pulls data from the page --}}
 
 
-<header class="main-header post-head style="background-image: url({{asset "images/source.gif"}})">
+<header class="main-header" post-head style="background-image: url({{asset "images/source.gif"}})">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img style="width:90px;height:90px;" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}

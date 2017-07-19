@@ -7,7 +7,7 @@
 {{!-- Everything inside the #post tags pulls data from the page --}}
 
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<header class="main-header post-head {{#if asset "images/logo-black.png"}}" style="background-image: url({{asset "images/logo-black.png"}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img style="width:90px;height:90px;" src="{{asset "images/logo-black.png"}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
@@ -20,7 +20,7 @@
     <article class="{{post_class}}">
 
         <header class="post-header">
-            <h1 class="post-title">Looks like Space Invaders destroyed this page. Take Revenge</h1>
+            <h1 class="post-title">Looks like Dedsec has destroyed this page. Take Revenge</h1>
         </header>
 
         
